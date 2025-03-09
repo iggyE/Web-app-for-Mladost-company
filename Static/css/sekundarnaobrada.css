@@ -1,0 +1,204 @@
+.main-title {
+    color: rgb(248, 5, 5); 
+    text-align: center; 
+    text-shadow: 4px 2px 4px rgba(56, 3, 3, 0.5); 
+    font-size: 2.75rem; 
+    margin-left: 25px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    right: 15px; 
+
+}
+
+.logo {
+    width: 95px; 
+    height: auto; 
+}
+
+
+/* Reset liste */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Glavni stil za header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2; /* Beo sa blagom crvenkastom nijansom */
+    border-bottom: 2px solid #ddd;
+}
+
+/* Stil za naslov */
+.sub-title {
+    color: #ff0000; /* Svetlija crvena */
+    text-shadow: 2px 2px 4px rgba(210, 64, 64, 0.5); /* Blagi tekst senka */
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Glavni stil za navigaciju */
+.nav {
+    display: flex;
+    justify-content: flex-end; /* Poravnanje menija desno */
+    align-items: center;
+    background-color: transparent; /* Transparentna pozadina */
+}
+
+/* Glavni meni */
+.nav_menu {
+    display: flex;
+    gap: 20px; /* Razmak između stavki glavnog menija */
+}
+
+/* Dugmići glavnog menija */
+.nav_menu-item {
+    position: relative;
+}
+
+/* Stil za linkove glavnog menija */
+.nav_menu-item > a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #1c1b1b; /* Svetlija crvena boja teksta */
+    font-size: 1.1rem;
+    font-weight: normal; /* Isključivanje boldovanja */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Hover efekat za glavne stavke */
+.nav_menu-item > a:hover {
+    background-color: #464646; /* Svetlo siva pozadina na hover */
+    color: #fff; /* Bela boja teksta na hover */
+}
+
+/* Dropdown meni (skriven) */
+.nav_submenu1,
+.nav_submenu2 {
+    display: none;
+    position: absolute;
+    top: 100%; /* Dropdown ispod glavne stavke */
+    left: 0;
+    background-color: #4f4f4f; /* Tamna pozadina za podmeni */
+    border-radius: 5px;
+    padding: 5px 0;
+    z-index: 1000;
+    min-width: 200px; /* Širina podmenija */
+}
+
+/* Pojava dropdown menija na hover */
+.nav_menu-item:hover .nav_submenu1,
+.nav_menu-item:hover .nav_submenu2 {
+    display: block;
+}
+
+/* Stavke dropdown menija */
+.nav_submenu-item a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff; /* Bela boja teksta */
+    font-size: 1rem; /* Veći font za podmeni */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover efekat za podmeni */
+.nav_submenu-item a:hover {
+    background-color: #555; /* Tamnija nijansa sive na hover */
+    color: #fff; /* Održavanje bele boje teksta */
+}
+
+
+
+.content-box.prvi{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    width: 90%; /* Podešavanje širine */
+    max-width: 1000px;
+    margin: 30px auto; /* Automatsko centriranje */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    height: 165px;
+    margin-left: 3%;
+}
+
+.content-box img {
+    width: 32%; /* Podesiva širina slike */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.content-box .text {
+    width: 85%;
+    padding: 0 90px;
+}
+
+.content-box.reverse {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    width: 95%; /* Podešavanje širine */
+    max-width: 1000px;
+    margin: 35px auto; /* Automatsko centriranje */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    height: 250px;
+    
+    flex-direction: row-reverse; /* Slika desno, tekst levo */
+    margin-right: 3%;
+}
+
+.content-box.reverse img {
+    width: 40%; /* Podesiva širina slike */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+.content-box.reverse .text {
+    width: 85%;
+    padding: 0px 50px;
+}
+
+.content-box .text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content-box .text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.content-box .btn {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.content-box .btn:hover {
+    background-color: darkgreen;
+}

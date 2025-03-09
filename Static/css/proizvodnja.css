@@ -1,0 +1,193 @@
+.main-title {
+    color: rgb(248, 5, 5); 
+    text-align: center; 
+    text-shadow: 4px 2px 4px rgba(56, 3, 3, 0.5); 
+    font-size: 2.75rem; 
+    margin-left: 25px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    right: 15px; 
+
+}
+
+.logo {
+    width: 95px; 
+    height: auto; 
+}
+
+
+/* Reset liste */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Glavni stil za header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2; /* Beo sa blagom crvenkastom nijansom */
+    border-bottom: 2px solid #ddd;
+}
+
+/* Stil za naslov */
+.sub-title {
+    color: #ff0000; /* Svetlija crvena */
+    text-shadow: 2px 2px 4px rgba(210, 64, 64, 0.5); /* Blagi tekst senka */
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Glavni stil za navigaciju */
+.nav {
+    display: flex;
+    justify-content: flex-end; /* Poravnanje menija desno */
+    align-items: center;
+    background-color: transparent; /* Transparentna pozadina */
+}
+
+/* Glavni meni */
+.nav_menu {
+    display: flex;
+    gap: 20px; /* Razmak između stavki glavnog menija */
+}
+
+/* Dugmići glavnog menija */
+.nav_menu-item {
+    position: relative;
+}
+
+/* Stil za linkove glavnog menija */
+.nav_menu-item > a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #1c1b1b; /* Svetlija crvena boja teksta */
+    font-size: 1.1rem;
+    font-weight: normal; /* Isključivanje boldovanja */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Hover efekat za glavne stavke */
+.nav_menu-item > a:hover {
+    background-color: #464646; /* Svetlo siva pozadina na hover */
+    color: #fff; /* Bela boja teksta na hover */
+}
+
+/* Dropdown meni (skriven) */
+.nav_submenu1,
+.nav_submenu2 {
+    display: none;
+    position: absolute;
+    top: 100%; /* Dropdown ispod glavne stavke */
+    left: 0;
+    background-color: #4f4f4f; /* Tamna pozadina za podmeni */
+    border-radius: 5px;
+    padding: 5px 0;
+    z-index: 1000;
+    min-width: 200px; /* Širina podmenija */
+}
+
+/* Pojava dropdown menija na hover */
+.nav_menu-item:hover .nav_submenu1,
+.nav_menu-item:hover .nav_submenu2 {
+    display: block;
+}
+
+/* Stavke dropdown menija */
+.nav_submenu-item a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff; /* Bela boja teksta */
+    font-size: 1rem; /* Veći font za podmeni */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover efekat za podmeni */
+.nav_submenu-item a:hover {
+    background-color: #555; /* Tamnija nijansa sive na hover */
+    color: #fff; /* Održavanje bele boje teksta */
+}
+
+
+/* Glavni kontejner */
+.production-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Poravnanje na vrh */
+    gap: 20px; /* Razmak između kolona */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stil za levu i desnu kolonu */
+.left-images,
+.right-images {
+    display: flex;
+    flex-direction: column; /* Vertikalni raspored slika */
+    gap: 10px; /* Razmak između slika */
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+/* Stil za slike */
+.left-images img,
+.right-images img {
+    width: 420px; /* Širina slika */
+    height: 240px; /* Visina slika */
+    object-fit: cover; /* Prilagođavanje slike bez gubitka proporcija */
+    border-radius: 10px; /* Zaobljeni uglovi */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Senka slika */
+}
+
+.proces-proizvodnje {
+    text-align: center;
+    margin: 20px;
+}
+
+.titlee {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitlee {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.steps {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block; /* Omogućava centriranje liste */
+}
+
+.steps li {
+    margin: 5px 0;
+}
+
+/* Stil za dugme */
+.middle-text button {
+    margin-top: 33px; /* Razmak između teksta i dugmeta */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green; /* Boja dugmeta */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.middle-text button:hover {
+    background-color: darkgreen; /* Tamnija nijansa na hover */
+}

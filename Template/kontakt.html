@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/kontakt.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="{% static 'Images/logo.ico' %}">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("{% static 'Images/bcg.jpg' %}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90vh;
+    }
+  </style>
+
+  <div class="logo-container">
+    <img src="{% static 'Images/mlogo.jpg' %}" alt="Logo" class="logo">
+</div>
+
+  <h1 class="main-title">Mladost Leskovac</h1>
+
+
+  <div class="header-container">
+    <!-- Leva strana: Naslov -->
+    <h1 class="sub-title">Kontakt</h1>
+
+    <!-- Desna strana: Meni -->
+    <nav class="nav">
+        <ul class="nav_menu">
+            <li class="nav_menu-item"><a href="{% url 'pocetna' %}">Početna</a></li>
+            
+            <!-- Glavni meni "Procesi proizvodnje" sa podmenijem -->
+            <li class="nav_menu-item dropdown">
+                <a href="{% url 'proizvodnja' %}" class="dropdown-toggle">Procesi proizvodnje <i class="fas fa-caret-down"></i></a>
+                <ul class="nav_submenu nav_submenu1">
+                    <li class="nav_submenu-item"><a href="{% url 'nabavljanje-gline' %}">Nabavljanje gline</a></li>
+                    <li class="nav_submenu-item"><a href="{% url 'primarna-obrada' %}">Primarna obrada</a></li>               
+                    <li class="nav_submenu-item"><a href="{% url 'sekundarna-obrada' %}">Sekundarna obrada</a></li>
+                    <li class="nav_submenu-item"><a href="{% url 'oblikovanje-crepa' %}">Oblikovanje crepa</a></li>
+                    <li class="nav_submenu-item"><a href="{% url 'susenje-slaganje' %}">Sušenje i slaganje crepa</a></li>
+                    <li class="nav_submenu-item"><a href="{% url 'pecenje-pakovanje' %}">Pečenje i pakovanje crepa</a></li>
+                </ul>
+            </li>
+
+            <!-- Glavni meni "O nama" sa podmenijem -->
+            <li class="nav_menu-item dropdown">
+                <a href="{% url 'nama' %}" class="dropdown-toggle">O nama <i class="fas fa-caret-down"></i></a>
+                <ul class="nav_submenu nav_submenu2">
+                    <li class="nav_submenu-item"><a href="{% url 'ko-smo-mi' %}">Ko smo mi</a></li>
+                    <li class="nav_submenu-item"><a href="{% url 'gde-se-nalazimo' %}">Gde se nalazimo</a></li>
+                    <li class="nav_submenu-item"><a href="{% url 'istorija' %}">Istorija</a></li>
+                </ul>
+            </li>
+
+            <li class="nav_menu-item"><a href="{% url 'kontakti' %}">Kontakt</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+</html>
